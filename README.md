@@ -1,2 +1,2 @@
 # RAG_Llama
-In this project, I built a RAG-based multilingual IT support chatbot using Meta Llama-3.1-8B-Instruct, BGE-M3 retrieval, BGE reranking, and FAISS. Fine-tuned with QLoRA SFT on support-ticket data and evaluated retrieval, evidence relevance, and response quality.
+Built a RAG-based multilingual IT support chatbot using Meta Llama-3.1-8B-Instruct as the generator, BGE-M3 for retrieval, BGE reranking, and FAISS vector search. Fine-tuned the generator with QLoRA SFT on the support-ticket data and evaluated performance using retrieval quality, reranked evidence relevance, lexical F1, ROUGE-L, and generated response quality metrics.
