@@ -65,25 +65,6 @@ The project is split into four clear stages:
 4. RAG validation and response generation
 ```
 
-The full workflow:
-
-```text
-Support ticket dataset
-        ↓
-Clean and prepare answered tickets
-        ↓
-Build FAISS knowledge base from train tickets
-        ↓
-Retrieve similar solved tickets
-        ↓
-Create RAG-grounded SFT examples
-        ↓
-Fine-tune Llama adapter
-        ↓
-Validate using retrieve → rerank → generate
-```
-
-
 
 ## Repository Structure
 
