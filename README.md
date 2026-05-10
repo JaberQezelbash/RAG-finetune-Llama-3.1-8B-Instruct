@@ -38,7 +38,7 @@ This project combines:
 
 The result is a practical RAG-based chatbot workflow for multilingual IT support tickets.
 
----
+
 
 ## Model Stack
 
@@ -282,7 +282,7 @@ That file includes:
 - troubleshooting notes,
 - and future improvement ideas.
 
----
+
 
 ## Author’s Note
 
