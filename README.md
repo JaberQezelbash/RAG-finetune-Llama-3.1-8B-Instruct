@@ -20,8 +20,7 @@ This repository contains an end-to-end **Retrieval-Augmented Generation (RAG)** 
 
 Unlike a simple fine-tuning project, this project intentionally makes **RAG the core component**. The model is not trained only to memorize support answers. Instead, each supervised fine-tuning example is built around retrieved context from a FAISS-based knowledge base, and the validation pipeline also follows the same retrieve → rerank → generate workflow.
 
-> ⚠️ Disclaimer: This project is for research, education, and portfolio demonstration. It is not a production helpdesk system. Generated responses should be reviewed before being used in real customer-support settings.
-
+> ⚠️ Disclaimer: This project is for research, education, and portfolio demonstration. It is not a production helpdesk system.
 ---
 
 ## Motivation
