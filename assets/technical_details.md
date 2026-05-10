@@ -2,7 +2,33 @@
 
 This document contains the deeper implementation notes for the **AI RAG Chatbot with Fine-Tuned Data** project.
 
-The main README focuses on the project story and usage. This file explains the technical design, configuration, artifacts, and evaluation details.
+
+## Table of Contents
+
+1. [Full Pipeline](#1-full-pipeline)
+2. [Dataset Details](#2-dataset-details)
+3. [Data Cleaning](#3-data-cleaning)
+4. [Train / Validation Split](#4-train--validation-split)
+5. [RAG Knowledge Base](#5-rag-knowledge-base)
+6. [Retriever](#6-retriever)
+7. [RAG-Grounded SFT Dataset](#7-rag-grounded-sft-dataset)
+8. [Generator Model](#8-generator-model)
+9. [Fine-Tuning Modes](#9-fine-tuning-modes)
+   - [9.1 CUDA QLoRA Mode](#91-cuda-qlora-mode)
+   - [9.2 CPU LoRA Fallback Mode](#92-cpu-lora-fallback-mode)
+10. [LoRA Configuration](#10-lora-configuration)
+11. [Validation Pipeline](#11-validation-pipeline)
+12. [Reranker Details](#12-reranker-details)
+13. [Output Files](#13-output-files)
+14. [Validation Metrics](#14-validation-metrics)
+15. [Example Metrics File](#15-example-metrics-file)
+16. [Important Configuration Summary](#16-important-configuration-summary)
+17. [Troubleshooting](#17-troubleshooting)
+18. [Recommended `.gitignore`](#18-recommended-gitignore)
+19. [Future Improvements](#19-future-improvements)
+20. [Reproducibility Checklist](#20-reproducibility-checklist)
+21. [Core Design Principle](#21-core-design-principle)
+
 
 ---
 
