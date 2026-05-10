@@ -98,8 +98,7 @@ Validate using retrieve → rerank → generate
 ├── assets/
 │   ├── technical_details.md
 │   ├── requirements.txt
-│   └── rag_architecture.png
-│
+│   └── model_architecture.png
 │
 ├── outputs/
 │   ├── processed/
@@ -157,13 +156,7 @@ More dataset-processing details are available in [`assets/technical_details.md`]
 
 ## Quick Start
 
-### 1. Install requirements
-
-```bash
-pip install -U pandas numpy scikit-learn tqdm ftfy faiss-cpu FlagEmbedding transformers datasets accelerate peft trl bitsandbytes sentencepiece protobuf safetensors huggingface_hub
-```
-
-### 2. Log in to Hugging Face
+### 0. Log in to Hugging Face
 
 Llama 3.1 is a gated model, so you need Hugging Face access and a token. Run:
 
@@ -171,7 +164,7 @@ Llama 3.1 is a gated model, so you need Hugging Face access and a token. Run:
 python codes/00_token_login.py
 ```
 
-### 3. Build RAG training data
+### 1. Building RAG
 
 ```bash
 python codes/01_build_rag_training_data.py
@@ -189,13 +182,13 @@ These include the cleaned train/validation splits, FAISS index, corpus, and RAG-
 
 
 
-### 4. Fine-tune Llama
+### 2. Fine-tune Llama
 
 ```bash
 python codes/02_train_llama_lora_or_qlora.py
 ```
 
-### 5. Validate the RAG chatbot
+### 3. Validation
 
 ```bash
 python codes/03_validate_rag_lora_or_qlora.py
@@ -286,5 +279,5 @@ That file includes:
 
 ## Author’s Note
 
-My goal was to build a clean and reproducible RAG-based pipeline that demonstrates how retrieval, reranking, and fine-tuning can work together in a realistic customer-support chatbot setting.
-The most important design choice is that *RAG remains central* throughout the project: during training-data construction, during validation, and during final chatbot-style response generation.
+The goal was to build a clean and reproducible RAG-based pipeline that demonstrates how retrieval, reranking, and fine-tuning can work together in a realistic customer-support chatbot setting.
+The most important design choice is that *RAG remains central* throughout the project: during training-data construction, dusing LLM finetuning, during validation, and during final chatbot-style response generation.
