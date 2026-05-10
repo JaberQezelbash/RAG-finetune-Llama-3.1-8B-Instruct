@@ -1,5 +1,4 @@
 # ============================================================
-# requirements.txt
 # AI RAG Chatbot with Fine-Tuned Data
 # Llama 3.1 + BGE-M3 + FAISS + LoRA/QLoRA
 # ============================================================
@@ -43,10 +42,3 @@ FlagEmbedding>=1.2.10
 jupyter>=1.0.0
 ipykernel>=6.29.0
 ipywidgets>=8.1.0
-
-# -----------------------------
-# Optional CUDA QLoRA dependency
-# -----------------------------
-# Uncomment this only if you are using a CUDA GPU environment.
-# On some CPU-only Windows setups, bitsandbytes may be unnecessary or problematic.
-# bitsandbytes>=0.43.0
