@@ -842,12 +842,8 @@ The most important design principle of this project is:
 
 > RAG is central at every stage.
 
-RAG is used:
-
 ```text
 during training-data construction,
 during validation,
 and during final chatbot-style generation.
 ```
-
-The model is not simply fine-tuned to answer tickets from memory. It is trained and evaluated in a retrieval-grounded setting.
