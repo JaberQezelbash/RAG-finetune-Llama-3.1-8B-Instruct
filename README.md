@@ -21,27 +21,11 @@ This repository contains an end-to-end **Retrieval-Augmented Generation (RAG)** 
 Unlike a simple fine-tuning project, this project intentionally makes **RAG the core component**. The model is not trained only to memorize support answers. Instead, each supervised fine-tuning example is built around retrieved context from a FAISS-based knowledge base, and the validation pipeline also follows the same retrieve → rerank → generate workflow.
 
 > ⚠️ Disclaimer: This project is only for research, education, and portfolio demonstration.
----
 
 
 
 
-
-
-
-
-
-This repository contains an end-to-end **Retrieval-Augmented Generation (RAG)** project for IT/customer-support automation. The system retrieves relevant solved tickets, reranks them, and uses the retrieved evidence to generate grounded multilingual support responses with a fine-tuned Llama model.
-
-The main idea is simple:
-
-> Instead of asking the language model to answer from memory, the chatbot first retrieves similar solved tickets and then generates a response grounded in that evidence.
-
-This makes RAG the core of the project, not just an optional add-on.
-
----
-
-## Project Motivation
+## Motivation
 
 Customer-support chatbots need to be accurate, consistent, and context-aware. A model that only relies on fine-tuning may learn response style, but it can still hallucinate or miss ticket-specific context.
 
@@ -65,7 +49,8 @@ The result is a practical RAG-based chatbot workflow for multilingual IT support
 | Reranker | [`BAAI/bge-reranker-v2-m3`](https://huggingface.co/BAAI/bge-reranker-v2-m3) |
 | Vector Store | FAISS |
 | Fine-tuning | LoRA / QLoRA |
-| Dataset | Customer IT Support / Multilingual Customer Support Tickets |
+| Dataset | Customer IT Support / Multilingual Customer Support Tickets (from [Kaggle](https://www.kaggle.com/datasets/tobiasbueck/multilingual-customer-support-tickets?resource=download)) |
+
 
 ---
 
