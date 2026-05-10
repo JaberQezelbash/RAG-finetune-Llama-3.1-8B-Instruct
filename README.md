@@ -27,7 +27,7 @@ Unlike a simple fine-tuning project, this project intentionally makes **RAG the 
 
 ## Project Summary
 
-- **Dataset:** Customer IT Support / Multilingual Customer Support Tickets  
+- **Dataset:** Customer IT Support / Multilingual Customer Support Tickets (from [Kaggle](https://www.kaggle.com/datasets/tobiasbueck/multilingual-customer-support-tickets?resource=download)) 
 - **Retriever:** [`BAAI/bge-m3`](https://huggingface.co/BAAI/bge-m3)  
 - **Reranker:** [`BAAI/bge-reranker-v2-m3`](https://huggingface.co/BAAI/bge-reranker-v2-m3)  
 - **Generator:** [`meta-llama/Llama-3.1-8B-Instruct`](https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct)  
