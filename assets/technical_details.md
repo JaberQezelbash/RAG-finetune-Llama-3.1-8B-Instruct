@@ -329,7 +329,6 @@ The token should not be hard-coded or committed.
 
 The fine-tuning script supports two modes.
 
----
 
 ### 9.1 CUDA QLoRA Mode
 
@@ -362,7 +361,6 @@ save_steps = 500
 eval_steps = 250
 ```
 
----
 
 ### 9.2 CPU LoRA Fallback Mode
 
