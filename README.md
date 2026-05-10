@@ -33,7 +33,7 @@ Unlike a simple fine-tuning project, this project intentionally makes **RAG the 
 - **Generator:** [`meta-llama/Llama-3.1-8B-Instruct`](https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct)  
 - **Fine-tuning:** LoRA / QLoRA supervised fine-tuning  
 - **Vector DB:** FAISS  
-- **Task:** Generate grounded multilingual support replies from retrieved ticket evidence  
+- **Task:** Generate grounded domain-specific support replies from retrieved ticket evidence  
 
 ---
 
